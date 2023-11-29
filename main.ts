@@ -85,5 +85,5 @@ client.command("stats", () => {
   });
 });
 
-await client.start(env.BOT_TOKEN); // ch tkn
+await client.start(env.BOT_TOKEN);
 await client.sendMessage(env.OWNER_ID, "Up.");
