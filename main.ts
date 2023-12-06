@@ -3,7 +3,7 @@ import {
   getColorFromPeerId,
   getColorName,
   StorageLocalStorage,
-} from "https://deno.land/x/mtkruto@0.1.116/mod.ts";
+} from "https://deno.land/x/mtkruto@0.1.122/mod.ts";
 import env from "./env.ts";
 import { getColorCodes } from "./util.ts";
 
@@ -71,18 +71,13 @@ client.on("inlineQuery", (ctx) => {
   }], { cacheTime: 5, isPersonal: true });
 });
 
-client.command("stats", () => {
-  client.on(["message", "text"], (ctx, next) => {
-    if (ctx.chat.id != env.OWNER_ID) {
-      return next();
-    }
-    const memoryUsed = Math.ceil(Deno.memoryUsage().rss / 1024 / 1024);
-    return ctx.reply(
-      `Uptime: ${
-        (Date.now() - startTime) / 1_000 / 60 / 60
-      }h\nMemory used: ${memoryUsed} MB\nRequests processed: ${requestsProcessed}`,
-    );
-  });
+client.command("stats").filter((ctx) => ctx.chat.id == env.OWNER_ID, (ctx) => {
+  const memoryUsed = Math.ceil(Deno.memoryUsage().rss / 1024 / 1024);
+  return ctx.reply(
+    `Uptime: ${
+      (Date.now() - startTime) / 1_000 / 60 / 60
+    }h\nMemory used: ${memoryUsed} MB\nRequests processed: ${requestsProcessed}`,
+  );
 });
 
 await client.start(env.BOT_TOKEN);
