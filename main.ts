@@ -3,7 +3,7 @@ import {
   getColorFromPeerId,
   getColorName,
   StorageLocalStorage,
-} from "https://deno.land/x/mtkruto@0.1.122/mod.ts";
+} from "mtkruto/mod.ts";
 import env from "./env.ts";
 import { getColorCodes } from "./util.ts";
 
