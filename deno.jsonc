@@ -1,5 +1,6 @@
 {
   "imports": {
-    "mtkruto/": "https://deno.land/x/mtkruto@0.1.139/"
+    "std/": "https://deno.land/std@0.214.0/",
+    "mtkruto/": "https://deno.land/x/mtkruto@0.1.149/"
   }
 }
