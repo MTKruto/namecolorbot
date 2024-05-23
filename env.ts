@@ -1,4 +1,4 @@
-import 'std/dotenv/load.ts';
+import "std/dotenv/load.ts";
 import { cleanEnv, num, str } from "https://deno.land/x/envalid@0.1.2/mod.ts";
 
 export default cleanEnv(Deno.env.toObject(), {
