@@ -1,0 +1,131 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@mtkruto/mtkruto@~0.6.3": "0.6.3",
+    "jsr:@roj/tgcrypto@1.0.0": "1.0.0",
+    "jsr:@std/assert@1.0.8": "1.0.8",
+    "jsr:@std/bytes@1.0.4": "1.0.4",
+    "jsr:@std/bytes@^1.0.3": "1.0.4",
+    "jsr:@std/datetime@~0.225.2": "0.225.2",
+    "jsr:@std/dotenv@~0.225.2": "0.225.2",
+    "jsr:@std/encoding@1.0.5": "1.0.5",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
+    "jsr:@std/io@0.225.0": "0.225.0",
+    "jsr:@std/media-types@1.1.0": "1.1.0",
+    "jsr:@std/path@1.0.8": "1.0.8",
+    "jsr:@std/streams@1.0.8": "1.0.8",
+    "npm:envalid@8": "8.0.0",
+    "npm:htmlparser2@9.1.0": "9.1.0"
+  },
+  "jsr": {
+    "@mtkruto/mtkruto@0.6.3": {
+      "integrity": "1d4a5e23299c8d1712808f707edf46babc7f283832007a6bbb3d5ee75195c694",
+      "dependencies": [
+        "jsr:@roj/tgcrypto",
+        "jsr:@std/assert",
+        "jsr:@std/bytes@1.0.4",
+        "jsr:@std/encoding",
+        "jsr:@std/io",
+        "jsr:@std/media-types",
+        "jsr:@std/path",
+        "jsr:@std/streams",
+        "npm:htmlparser2"
+      ]
+    },
+    "@roj/tgcrypto@1.0.0": {
+      "integrity": "b8d054f790a5e385248aae5af897b1af33d430461d79a45f0c9c1c9e72d9d3a0"
+    },
+    "@std/assert@1.0.8": {
+      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/bytes@1.0.4": {
+      "integrity": "11a0debe522707c95c7b7ef89b478c13fb1583a7cfb9a85674cd2cc2e3a28abc"
+    },
+    "@std/datetime@0.225.2": {
+      "integrity": "45f0100554a912cd65f48089ef0a33aa1eb6ea21f08090840b539ab582827eaa"
+    },
+    "@std/dotenv@0.225.2": {
+      "integrity": "e2025dce4de6c7bca21dece8baddd4262b09d5187217e231b033e088e0c4dd23"
+    },
+    "@std/encoding@1.0.5": {
+      "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    },
+    "@std/io@0.225.0": {
+      "integrity": "c1db7c5e5a231629b32d64b9a53139445b2ca640d828c26bf23e1c55f8c079b3"
+    },
+    "@std/media-types@1.1.0": {
+      "integrity": "c9d093f0c05c3512932b330e3cc1fe1d627b301db33a4c2c2185c02471d6eaa4"
+    },
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    },
+    "@std/streams@1.0.8": {
+      "integrity": "b41332d93d2cf6a82fe4ac2153b930adf1a859392931e2a19d9fabfb6f154fb3",
+      "dependencies": [
+        "jsr:@std/bytes@^1.0.3"
+      ]
+    }
+  },
+  "npm": {
+    "dom-serializer@2.0.0": {
+      "integrity": "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==",
+      "dependencies": [
+        "domelementtype",
+        "domhandler",
+        "entities"
+      ]
+    },
+    "domelementtype@2.3.0": {
+      "integrity": "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
+    },
+    "domhandler@5.0.3": {
+      "integrity": "sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==",
+      "dependencies": [
+        "domelementtype"
+      ]
+    },
+    "domutils@3.1.0": {
+      "integrity": "sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==",
+      "dependencies": [
+        "dom-serializer",
+        "domelementtype",
+        "domhandler"
+      ]
+    },
+    "entities@4.5.0": {
+      "integrity": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
+    },
+    "envalid@8.0.0": {
+      "integrity": "sha512-PGeYJnJB5naN0ME6SH8nFcDj9HVbLpYIfg1p5lAyM9T4cH2lwtu2fLbozC/bq+HUUOIFxhX/LP0/GmlqPHT4tQ==",
+      "dependencies": [
+        "tslib"
+      ]
+    },
+    "htmlparser2@9.1.0": {
+      "integrity": "sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==",
+      "dependencies": [
+        "domelementtype",
+        "domhandler",
+        "domutils",
+        "entities"
+      ]
+    },
+    "tslib@2.6.2": {
+      "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@mtkruto/mtkruto@~0.6.3",
+      "jsr:@std/datetime@~0.225.2",
+      "jsr:@std/dotenv@~0.225.2",
+      "npm:envalid@8"
+    ]
+  }
+}

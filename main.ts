@@ -1,17 +1,9 @@
-import {
-  Client,
-  getColorFromPeerId,
-  getColorName,
-  StorageLocalStorage,
-} from "mtkruto/mod.ts";
+import { Client, getColorFromPeerId, getColorName } from "@mtkruto/mtkruto";
+import {HOUR} from '@std/datetime/constants'
 import env from "./env.ts";
 import { getColorCodes } from "./util.ts";
 
-const client = new Client({
-  storage: new StorageLocalStorage("client"),
-  apiId: env.API_ID,
-  apiHash: env.API_HASH,
-});
+const client = new Client({ authString: env.AUTH_STRING });
 const startTime = Date.now();
 
 let requestsProcessed = 0;
@@ -75,10 +67,10 @@ client.command("stats").filter((ctx) => ctx.chat.id == env.OWNER_ID, (ctx) => {
   const memoryUsed = Math.ceil(Deno.memoryUsage().rss / 1024 / 1024);
   return ctx.reply(
     `Uptime: ${
-      (Date.now() - startTime) / 1_000 / 60 / 60
+      (Date.now() - startTime) / HOUR
     }h\nMemory used: ${memoryUsed} MB\nRequests processed: ${requestsProcessed}`,
   );
 });
 
-await client.start({ botToken: env.BOT_TOKEN });
+await client.start();
 await client.sendMessage(env.OWNER_ID, "Up.");
